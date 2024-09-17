@@ -11,12 +11,13 @@ export default async function Page() {
   const page = await client.getSingle("homepage");
 
   return (
-    <>
+    <div className="container mx-auto px-4">
       <SliceZone slices={page.data.slices} components={components} />
-      <About />
-      <Experience />
+      <div className="mt-40">
+        <Experience />
+      </div>
       <Technology />
-    </>
+    </div>
   );
 }
 

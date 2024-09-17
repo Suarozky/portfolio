@@ -34,7 +34,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           transformOrigin: "left top",
           delay: 0.5,
           stagger: { each: 0.1, from: "random" },
-        },
+        }
       );
 
       tl.fromTo(
@@ -50,7 +50,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           duration: 1,
           scale: 1,
           ease: "elastic.out(1, 0.3)",
-        },
+        }
       );
     }, component);
     return () => ctx.revert();
@@ -69,60 +69,56 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
   };
 
   return (
-    <>
-      <Bounded
-        data-slice-type={slice.slice_type}
-        data-slice-variation={slice.variation}
-        ref={component}
-        className="h-full w-full lg:mb-80 lg:h-screen xl:mb-0"
-      >
-        <>
-          <div className="grid h-full grid-cols-1 items-center justify-center lg:grid-cols-2">
-            <Shapes />
-            <div
-              className="hidden font-black uppercase text-SecondaryColorBanner lg:block"
-              data-speed=".4"
-            >
-              <h1
-                className="text-[clamp(3rem,20vmin,20rem)] leading-none tracking-tighter"
-                aria-label={
-                  slice.primary.first_name + " " + slice.primary.last_name
-                }
-              >
-                <div className="flex flex-col items-center">
-                  <span className="block whitespace-nowrap text-center font-extrabold">
-                    Brayan
-                  </span>
-                  <span className="block whitespace-nowrap text-center font-black text-SecondaryColorBanner">
-                    suarez
-                  </span>
-                </div>
-              </h1>
-              <span className="job-title block text-center text-lg uppercase tracking-[.2em] text-MainBannerColor opacity-0 2xl:text-4xl">
-                FullStack
+    <Bounded
+      data-slice-type={slice.slice_type}
+      data-slice-variation={slice.variation}
+      ref={component}
+      className="h-full w-full bg-transparent lg:mb-80 lg:h-screen xl:mb-0"
+    >
+      <div className="grid h-full grid-cols-1 items-center justify-center lg:grid-cols-2">
+        <Shapes />
+        <div
+          className="font-black uppercase text-SecondaryColorBanner lg:pl-16 lg:items-start lg:text-left"
+          data-speed=".4"
+        >
+          <h1
+            className="text-[clamp(3rem,8vw,4rem)] leading-none tracking-tighter text-white lg:text-[clamp(5rem,10vw,12rem)] lg:leading-tight lg:text-white"
+            aria-label={
+              slice.primary.first_name + " " + slice.primary.last_name
+            }
+          >
+            <div className="flex flex-col items-center lg:items-start">
+              <span className="block whitespace-nowrap text-center font-extrabold lg:text-left">
+                Brayan
+              </span>
+              <span className="block whitespace-nowrap text-center font-black lg:text-left text-SecondaryColorBanner lg:text-white">
+                Suarez
               </span>
             </div>
-          </div>
+          </h1>
+          <span className="job-title block text-center text-sm uppercase tracking-[.2em] text-MainBannerColor opacity-0 lg:text-5xl lg:tracking-wider lg:text-white">
+            FullStack
+          </span>
+        </div>
+      </div>
 
-          <div className="job-title hidden h-80 w-full flex-col items-center justify-center gap-8 text-MainBannerColor opacity-0 lg:flex lg:h-32 lg:flex-row">
-            <a
-              href="#Services"
-              className="flex h-14 w-60 items-center justify-center gap-2 rounded-full border-2 border-MainBannerColor bg-SecondaryColorBanner text-center text-sm font-black uppercase text-slate-700 transition-all duration-300 hover:scale-110 hover:text-SelectedShadowHover hover:opacity-100 hover:shadow-2xl hover:shadow-SelectedShadowHover dark:hover:border-MainBannerColor dark:hover:bg-MainBannerColor"
-            >
-              Start Now
-              <BiConversation className="text-2xl" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/suarozky/"
-              className="flex h-14 w-60 items-center justify-center gap-2 rounded-full border-MainBannerColor bg-MainBannerColor bg-opacity-5 text-center text-sm font-black uppercase transition-all duration-300 hover:scale-110 hover:border-2 hover:opacity-100 hover:shadow-2xl hover:shadow-SelectedShadowHover dark:hover:border-MainBannerColor dark:hover:bg-MainBannerColor dark:hover:text-slate-700"
-            >
-              View Linkedin
-              <BiConversation className="text-2xl" />
-            </a>
-          </div>
-        </>
-      </Bounded>
-    </>
+      <div className="job-title flex flex-col items-center justify-center gap-10 lg:mt-24 lg:w-full lg:h-auto lg:flex-row">
+        <a
+          href="#Services"
+          className="flex h-14 w-60 items-center justify-center gap-2 rounded-full border-2 border-MainBannerColor bg-SecondaryColorBanner text-center text-sm font-black uppercase text-slate-700 transition-all duration-300 hover:scale-110 hover:text-SelectedShadowHover hover:opacity-100 hover:shadow-2xl hover:shadow-SelectedShadowHover dark:hover:border-MainBannerColor dark:hover:bg-MainBannerColor"
+        >
+          Start Now
+          <BiConversation className="text-2xl" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/suarozky/"
+          className="flex h-14 w-60 items-center justify-center gap-2 rounded-full border-MainBannerColor bg-MainBannerColor bg-opacity-5 text-center text-sm font-black uppercase transition-all duration-300 hover:scale-110 hover:border-2 hover:opacity-100 hover:shadow-2xl hover:shadow-SelectedShadowHover dark:hover:border-MainBannerColor dark:hover:bg-MainBannerColor dark:hover:text-slate-700"
+        >
+          View Linkedin
+          <BiConversation className="text-2xl" />
+        </a>
+      </div>
+    </Bounded>
   );
 };
 

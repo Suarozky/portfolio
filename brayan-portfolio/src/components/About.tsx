@@ -1,18 +1,6 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
-import Banner from "./Banner";
-import { RiNextjsFill } from "react-icons/ri";
-import {
-  BiLogoReact,
-  BiLogoTailwindCss,
-  BiLogoJavascript,
-  BiLogoTypescript,
-  BiLogoVisualStudio,
-} from "react-icons/bi";
 
-import Image from "next/image";
-import { PiArrowRight } from "react-icons/pi";
 
 const About = () => {
   const [selectedButton, setSelectedButton] = useState("BiMap");
