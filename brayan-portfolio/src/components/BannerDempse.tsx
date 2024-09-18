@@ -23,7 +23,7 @@ const BannerDempse = ({ mainText = "Brayan Suarez", subText = "Showroom" }) => {
         </h1>
         <div className="hidden lg:flex gap-8">
           <a
-            href="/BrayanSuarezCV.pdf"
+            href="/brayan CV PDF.pdf"
             download
             className="flex h-14 w-60 items-center justify-center gap-2 rounded-full border-2 border-MainBannerColor bg-SecondaryColorBanner text-center text-sm font-black uppercase text-slate-700 transition-all duration-300 hover:scale-110 hover:text-SelectedShadowHover hover:opacity-100 hover:shadow-2xl hover:shadow-SelectedShadowHover dark:hover:border-MainBannerColor dark:hover:bg-MainBannerColor"
           >
