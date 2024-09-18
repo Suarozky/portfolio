@@ -8,7 +8,13 @@ import {
   BiLogoJavascript,
   BiLogoTypescript,
   BiPlus,
+  BiLogoPostgresql
+
 } from "react-icons/bi";
+import { IoLogoNodejs } from "react-icons/io5";
+import { DiMongodb } from "react-icons/di";
+import { SiPrisma,SiDocker } from "react-icons/si";
+import { FaGitSquare } from "react-icons/fa";
 
 const Technology = () => {
   return (
@@ -43,8 +49,24 @@ const Technology = () => {
             <BiPlus />
           </button>
           <button className="flex h-12 w-12 items-center justify-center rounded-full border-2 text-xl text-SecondaryColorBanner opacity-70 transition-transform duration-300 hover:scale-110 hover:border-SecondaryColorBanner hover:bg-SecondaryColorBanner hover:text-slate-700 hover:opacity-100">
-            <BiPlus />
+          <IoLogoNodejs />
           </button>
+          <button className="flex h-12 w-12 items-center justify-center rounded-full border-2 text-xl text-SecondaryColorBanner opacity-70 transition-transform duration-300 hover:scale-110 hover:border-SecondaryColorBanner hover:bg-SecondaryColorBanner hover:text-slate-700 hover:opacity-100">
+            <DiMongodb />
+          </button>
+          <button className="flex h-12 w-12 items-center justify-center rounded-full border-2 text-xl text-SecondaryColorBanner opacity-70 transition-transform duration-300 hover:scale-110 hover:border-SecondaryColorBanner hover:bg-SecondaryColorBanner hover:text-slate-700 hover:opacity-100">
+            <BiLogoPostgresql />
+          </button>
+          <button className="flex h-12 w-12 items-center justify-center rounded-full border-2 text-xl text-SecondaryColorBanner opacity-70 transition-transform duration-300 hover:scale-110 hover:border-SecondaryColorBanner hover:bg-SecondaryColorBanner hover:text-slate-700 hover:opacity-100">
+            <SiPrisma />  
+          </button>
+          <button className="flex h-12 w-12 items-center justify-center rounded-full border-2 text-xl text-SecondaryColorBanner opacity-70 transition-transform duration-300 hover:scale-110 hover:border-SecondaryColorBanner hover:bg-SecondaryColorBanner hover:text-slate-700 hover:opacity-100">
+            <SiDocker />
+          </button>
+          <button className="flex h-12 w-12 items-center justify-center rounded-full border-2 text-xl text-SecondaryColorBanner opacity-70 transition-transform duration-300 hover:scale-110 hover:border-SecondaryColorBanner hover:bg-SecondaryColorBanner hover:text-slate-700 hover:opacity-100">
+            <FaGitSquare />
+          </button>
+      
         </div>
 
         <div className="text-center text-sm text-SecondaryColorBanner opacity-70 lg:text-xl xl:text-2xl">
