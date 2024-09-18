@@ -13,6 +13,7 @@ const Experience = () => {
     { href: "https://peli-cyan.vercel.app/", src: "/peli.svg", alt: "Image peli" },
     { href: "https://play.google.com/store/apps/details?id=com.vakanostudio.polar&hl=es_CO&pli=1", src: "/polar 1.svg", alt: "Image 5" },
     { href: "https://pokedex-pink-delta.vercel.app/", src: "/poke 1.svg", alt: "poke Api" },
+    { href: "https://easy-pay-black.vercel.app/", src: "/pay.svg", alt: "poke Api" },
   ];
 
   return (
