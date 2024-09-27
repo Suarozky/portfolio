@@ -15,6 +15,7 @@ const Experience = () => {
     { href: "https://pokedex-pink-delta.vercel.app/", src: "/poke 1.svg", alt: "poke Api" },
     { href: "https://easy-pay-black.vercel.app/", src: "/pay.svg", alt: "pagafacil" },
     { href: "https://pasarela-front-eta.vercel.app/", src: "/logo.png", alt: "epayco" },
+    { href: "https://manga-nine-snowy.vercel.app/", src: "/luf.jpg", alt: "luffy" },
   ];
 
   return (
