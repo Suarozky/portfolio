@@ -8,8 +8,8 @@ const Experience = () => {
   // Array de objetos con los datos de los enlaces e imágenes
   const items = [
     { href: "https://letras-tawny.vercel.app/", src: "/letras.svg", alt: "letras image" },
-    { href: "https://www.linkedin.com/in/suarozky/details/projects/", src: "/banco.svg", alt: "banco image" },
-    { href: "https://www.linkedin.com/in/suarozky/details/projects/", src: "/tinder.svg", alt: "tinder image" },
+    { href: "https://pet-care-azure.vercel.app/", src: "/dogprofile.jpg", alt: "banco image" },
+    { href: "https://casi-casino-front.vercel.app/", src: "/casino.jpg", alt: "tinder image" },
     { href: "https://peli-cyan.vercel.app/", src: "/peli.svg", alt: "Image peli" },
     { href: "https://play.google.com/store/apps/details?id=com.vakanostudio.polar&hl=es_CO&pli=1", src: "/polar 1.svg", alt: "Image 5" },
     { href: "https://pokedex-pink-delta.vercel.app/", src: "/poke 1.svg", alt: "poke Api" },
